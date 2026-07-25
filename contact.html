@@ -2,59 +2,158 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GoCar</title>
-    <meta name="description" content="Rent cars online" />
-    <meta name="keywords" content="cars, rent, online" />
-    <meta name="author" content="Bilal El yazidi" />
+    <title>Contact Us - GoCar Rental</title>
+    <meta name="description" content="Get in touch with GoCar customer support team. Send us a message or inquire about custom vehicle reservations." />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/contactUs.css" />
-
   </head>
-<body style="overflow-x: hidden">
-
+  <body>
+    <!-- Header Navbar -->
     <header class="header">
-        <nav class="navbar container">
-          <img src="images/logo.svg" alt="gocar logo" />
-          <ul>
-            <li><a href="hero.html">Hero Page</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Gallery</a></li>
-            <li><a href="Avantages.html">Advantages</a></li>
-            <li><a href="Carte.html">Find Us</a></li>
-            <li><a href="contact.html">contact Us</a></li>
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="GoCar Rental Logo" />
+          </a>
+          
+          <button class="hamburger" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-  
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="gallery.html" class="nav-link">Car Fleet</a></li>
+            <li><a href="advantages.html" class="nav-link">Advantages</a></li>
+            <li><a href="find-us.html" class="nav-link">Find Us</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
           </ul>
         </nav>
-      </header>
-      
-    <section class="hero">
-        <div class="container">
-          <div>
-            <video
-              src="images/video.mp4"
-              type="video/mp4"
-              autoplay
-              muted
-              loop
-            ></video>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section-padding" style="padding-top: 140px; padding-bottom: 2rem;">
+      <div class="container">
+        <h2>Get In <span>Touch</span></h2>
+        <p class="section-desc">Have questions about our fleet, corporate rentals, or VIP custom bookings? Our dedicated team is available 24/7.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form & Info Grid -->
+    <section class="section-padding" style="padding-top: 0;">
+      <div class="container">
+        <div class="contact-section-grid">
+          <div class="contact-info-side">
+            <h2>We Are Here To <span>Help</span></h2>
+            <p style="color: var(--text-muted); font-size: 1.05rem; margin-top: 1rem;">
+              Whether you need assistance choosing the perfect vehicle or want to modify an existing reservation, reach out to us directly through any channel.
+            </p>
+
+            <div class="contact-detail-list">
+              <div class="contact-detail-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                  <h4>Phone Support</h4>
+                  <p>+1 (800) 555-GOCAR / +1 (800) 555-46227</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">✉️</div>
+                <div>
+                  <h4>Email Inquiries</h4>
+                  <p>support@gocar-rental.com / vip@gocar-rental.com</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <h4>Main Showroom</h4>
+                  <p>124 Luxury Boulevard, Tech District, Suite 400</p>
+                </div>
+              </div>
+            </div>
           </div>
-    <div class="contr">
-        <form >
-            <h1>Contact Us</h1>
-            <input type="text" id="txtFirstName" placeholder="First Name" required>
-            <input type="text" id="txtLastName" placeholder="Last Name" required>
-            <input type="email" id="txtEmail" placeholder="Email" required>
-            <input type="text" id="txtMobile" placeholder="Phone Number" required>
-            <h4> Type your Message here :</h4>
-            <textarea required></textarea>
-            <input type="submit" id="btnSend" value="Send" required>
 
-        </form>
+          <div class="contact-form-container">
+            <form id="contactForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="txtFirstName">First Name</label>
+                  <input type="text" id="txtFirstName" placeholder="Bilal" required />
+                </div>
+                <div class="form-group">
+                  <label for="txtLastName">Last Name</label>
+                  <input type="text" id="txtLastName" placeholder="El Yazidi" required />
+                </div>
+                <div class="form-group">
+                  <label for="txtEmail">Email Address</label>
+                  <input type="email" id="txtEmail" placeholder="name@example.com" required />
+                </div>
+                <div class="form-group">
+                  <label for="txtMobile">Phone Number</label>
+                  <input type="tel" id="txtMobile" placeholder="+1 (555) 000-0000" required />
+                </div>
+                <div class="form-group full-width">
+                  <label for="txtMessage">Your Message</label>
+                  <textarea id="txtMessage" placeholder="Type your message or inquiry here..." required></textarea>
+                </div>
+                <div class="form-group full-width" style="margin-top: 1rem;">
+                  <button type="submit" class="btn btn-accent" style="width: 100%;">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </div>
-    
-</body>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="images/logo.svg" alt="GoCar Logo" style="height: 36px;" />
+            <p>Your premier destination for hassle-free, luxury, and everyday car rentals across the region.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Car Fleet</a></li>
+              <li><a href="advantages.html">Advantages</a></li>
+              <li><a href="find-us.html">Find Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Our Fleet</h4>
+            <ul>
+              <li><a href="gallery.html">Audi Collection</a></li>
+              <li><a href="gallery.html">Mercedes AMG</a></li>
+              <li><a href="gallery.html">BMW Series</a></li>
+              <li><a href="gallery.html">Supercars & Exotic</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal & Safety</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Insurance Coverage</a></li>
+              <li><a href="#">Help & FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 GoCar Rental. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

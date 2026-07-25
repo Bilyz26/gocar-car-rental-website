@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Fleet & Gallery - GoCar Rental</title>
+    <meta name="description" content="Browse our luxury car rental fleet. Filter by brand, budget, or availability and reserve your vehicle online." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header Navbar -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="GoCar Rental Logo" />
+          </a>
+          
+          <button class="hamburger" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="gallery.html" class="nav-link active">Car Fleet</a></li>
+            <li><a href="advantages.html" class="nav-link">Advantages</a></li>
+            <li><a href="find-us.html" class="nav-link">Find Us</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Header Banner -->
+    <section class="section-padding" style="padding-top: 140px; padding-bottom: 2rem;">
+      <div class="container">
+        <h2>Our Vehicle <span>Fleet</span></h2>
+        <p class="section-desc">Explore our world-class inventory of luxury sedans, high-performance supercars, and reliable everyday vehicles.</p>
+        
+        <!-- Filter Toolbar -->
+        <div class="filter-toolbar">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Show All</button>
+            <button class="filter-btn" data-filter="Audi">Audi</button>
+            <button class="filter-btn" data-filter="Mercedes">Mercedes</button>
+            <button class="filter-btn" data-filter="BMW">BMW</button>
+            <button class="filter-btn" data-filter="Ferrari">Ferrari</button>
+            <button class="filter-btn" data-filter="Skoda">Skoda</button>
+            <button class="filter-btn" data-filter="avbl">Available Only</button>
+          </div>
+
+          <div class="search-box">
+            <input type="number" id="budgetInput" placeholder="Max Budget ($/day)" />
+            <button id="searchBtn" title="Filter by budget">🔍</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cars Fleet Grid -->
+    <section class="section-padding" style="padding-top: 0;">
+      <div class="container">
+        <div class="cars-grid">
+          <!-- Car 1 -->
+          <div class="car-card" data-marque="Skoda" data-price="250" data-status="available">
+            <div class="car-image-wrapper">
+              <img src="images/gallery/1-vauxhall-corsa-2020-fd-hero-front.jpg" alt="Skoda Superb" />
+              <span class="car-badge">Available</span>
+            </div>
+            <div class="car-card-content">
+              <div class="car-title-row">
+                <h3>Skoda Superb</h3>
+                <div class="car-price">$250 <span>/ day</span></div>
+              </div>
+              <div class="car-specs">
+                <div class="car-spec-item">⚙️ Auto</div>
+                <div class="car-spec-item">⛽ Petrol</div>
+                <div class="car-spec-item">👤 5 Seats</div>
+              </div>
+              <p class="car-desc">Spacious executive sedan offering superior ride comfort, advanced safety features, and exceptional fuel efficiency.</p>
+              <div class="car-card-actions">
+                <button class="btn btn-accent reserve-btn">Reserve Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 2 -->
+          <div class="car-card" data-marque="Toyota" data-price="180" data-status="available">
+            <div class="car-image-wrapper">
+              <img src="images/gallery/2017-toyota-prius-prime-advanced-201-1599761815.jpg" alt="Toyota Prius Hybrid" />
+              <span class="car-badge">Available</span>
+            </div>
+            <div class="car-card-content">
+              <div class="car-title-row">
+                <h3>Toyota Prius Hybrid</h3>
+                <div class="car-price">$180 <span>/ day</span></div>
+              </div>
+              <div class="car-specs">
+                <div class="car-spec-item">⚙️ Auto</div>
+                <div class="car-spec-item">🔋 Hybrid</div>
+                <div class="car-spec-item">👤 5 Seats</div>
+              </div>
+              <p class="car-desc">Eco-friendly hybrid hatchback perfect for smooth city commuting with ultra-low emissions and smart tech onboard.</p>
+              <div class="car-card-actions">
+                <button class="btn btn-accent reserve-btn">Reserve Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 3 -->
+          <div class="car-card" data-marque="Honda" data-price="210" data-status="available">
+            <div class="car-image-wrapper">
+              <img src="images/gallery/2020-Honda-Civic-Si-Coupe.jpg" alt="Honda Civic Si Coupe" />
+              <span class="car-badge">Available</span>
+            </div>
+            <div class="car-card-content">
+              <div class="car-title-row">
+                <h3>Honda Civic Si</h3>
+                <div class="car-price">$210 <span>/ day</span></div>
+              </div>
+              <div class="car-specs">
+                <div class="car-spec-item">⚙️ Manual</div>
+                <div class="car-spec-item">⛽ Turbo</div>
+                <div class="car-spec-item">👤 4 Seats</div>
+              </div>
+              <p class="car-desc">Agile sporty coupe featuring responsive manual transmission, aggressive styling, and premium infotainment system.</p>
+              <div class="car-card-actions">
+                <button class="btn btn-accent reserve-btn">Reserve Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 4 -->
+          <div class="car-card" data-marque="Mercedes" data-price="650" data-status="available">
+            <div class="car-image-wrapper">
+              <img src="images/gallery/cls-63-amg-stealth-by-gsc-spotted-in-underground-garage-videophoto-gallery_7.png" alt="Mercedes CLS 63 AMG" />
+              <span class="car-badge">Available</span>
+            </div>
+            <div class="car-card-content">
+              <div class="car-title-row">
+                <h3>Mercedes CLS 63 AMG</h3>
+                <div class="car-price">$650 <span>/ day</span></div>
+              </div>
+              <div class="car-specs">
+                <div class="car-spec-item">⚙️ Auto</div>
+                <div class="car-spec-item">🏎️ V8 Biturbo</div>
+                <div class="car-spec-item">👤 5 Seats</div>
+              </div>
+              <p class="car-desc">High-performance 4-door luxury coupe delivering staggering horsepower, custom exhaust note, and handcrafted interior.</p>
+              <div class="car-card-actions">
+                <button class="btn btn-accent reserve-btn">Reserve Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 5 -->
+          <div class="car-card" data-marque="Audi" data-price="780" data-status="available">
+            <div class="car-image-wrapper">
+              <img src="images/gallery/index_key_002_sp.jpg" alt="Audi RS7 Mansory" />
+              <span class="car-badge">Available</span>
+            </div>
+            <div class="car-card-content">
+              <div class="car-title-row">
+                <h3>Audi RS7 Mansory</h3>
+                <div class="car-price">$780 <span>/ day</span></div>
+              </div>
+              <div class="car-specs">
+                <div class="car-spec-item">⚙️ Auto</div>
+                <div class="car-spec-item">🏁 750 HP</div>
+                <div class="car-spec-item">👤 4 Seats</div>
+              </div>
+              <p class="car-desc">Exotic sportback enhanced with carbon fiber accents, Quattro all-wheel drive, and blistering zero-to-60 acceleration.</p>
+              <div class="car-card-actions">
+                <button class="btn btn-accent reserve-btn">Reserve Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 6 -->
+          <div class="car-card" data-marque="Ferrari" data-price="1200" data-status="available">
+            <div class="car-image-wrapper">
+              <img src="images/gallery/Laferrari-1024x576.jpg" alt="LaFerrari Hypercar" />
+              <span class="car-badge">Available</span>
+            </div>
+            <div class="car-card-content">
+              <div class="car-title-row">
+                <h3>Ferrari LaFerrari</h3>
+                <div class="car-price">$1,200 <span>/ day</span></div>
+              </div>
+              <div class="car-specs">
+                <div class="car-spec-item">⚙️ F1 Dual-Clutch</div>
+                <div class="car-spec-item">⚡ V12 HY-KERS</div>
+                <div class="car-spec-item">👤 2 Seats</div>
+              </div>
+              <p class="car-desc">The pinnacle of Italian automotive engineering. Extreme hybrid performance with unmistakable aerodynamic styling.</p>
+              <div class="car-card-actions">
+                <button class="btn btn-accent reserve-btn">Reserve Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 7 -->
+          <div class="car-card" data-marque="BMW" data-price="420" data-status="available">
+            <div class="car-image-wrapper">
+              <img src="images/gallery/pexels-mikebirdy-170811.jpg" alt="BMW M4 Competition" />
+              <span class="car-badge">Available</span>
+            </div>
+            <div class="car-card-content">
+              <div class="car-title-row">
+                <h3>BMW M4 Coupe</h3>
+                <div class="car-price">$420 <span>/ day</span></div>
+              </div>
+              <div class="car-specs">
+                <div class="car-spec-item">⚙️ Auto</div>
+                <div class="car-spec-item">⛽ TwinPower</div>
+                <div class="car-spec-item">👤 4 Seats</div>
+              </div>
+              <p class="car-desc">Ultimate driving machine combining dynamic handling, digital driver display cockpit, and twin-turbo precision.</p>
+              <div class="car-card-actions">
+                <button class="btn btn-accent reserve-btn">Reserve Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 8 -->
+          <div class="car-card" data-marque="Porsche" data-price="890" data-status="available">
+            <div class="car-image-wrapper">
+              <img src="images/gallery/kahl-orr-ZdLFPE0AZBU-unsplash.jpg" alt="Porsche 911 GT3" />
+              <span class="car-badge">Available</span>
+            </div>
+            <div class="car-card-content">
+              <div class="car-title-row">
+                <h3>Porsche 911 GT3</h3>
+                <div class="car-price">$890 <span>/ day</span></div>
+              </div>
+              <div class="car-specs">
+                <div class="car-spec-item">⚙️ PDK</div>
+                <div class="car-spec-item">🏁 500 HP</div>
+                <div class="car-spec-item">👤 2 Seats</div>
+              </div>
+              <p class="car-desc">Track-honed precision sports car featuring naturally aspirated flat-six engine, swan-neck rear wing, and raw thrills.</p>
+              <div class="car-card-actions">
+                <button class="btn btn-accent reserve-btn">Reserve Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation Modal Backdrop -->
+    <div class="modal-backdrop" id="reserveModal">
+      <div class="modal-card">
+        <button class="modal-close" title="Close Modal">&times;</button>
+        <h3>Vehicle Reservation</h3>
+        <p class="modal-car-name" id="modalCarName">Reserve Vehicle</p>
+        
+        <form id="reservationForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+1 (555) 000-0000" required />
+            </div>
+            <div class="form-group">
+              <label>Pickup Date</label>
+              <input type="date" required />
+            </div>
+            <div class="form-group">
+              <label>Return Date</label>
+              <input type="date" required />
+            </div>
+            <div class="form-group full-width">
+              <label>Pickup Location</label>
+              <select required>
+                <option value="">Select Pickup Location...</option>
+                <option value="airport">Airport Terminal Hub</option>
+                <option value="downtown">Downtown Headquarters</option>
+                <option value="delivery">Doorstep Delivery (VIP)</option>
+              </select>
+            </div>
+            <div class="form-group full-width" style="margin-top: 1rem;">
+              <button type="submit" class="btn btn-accent" style="width: 100%;">Confirm Booking Request</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="images/logo.svg" alt="GoCar Logo" style="height: 36px;" />
+            <p>Your premier destination for hassle-free, luxury, and everyday car rentals across the region.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Car Fleet</a></li>
+              <li><a href="advantages.html">Advantages</a></li>
+              <li><a href="find-us.html">Find Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Our Fleet</h4>
+            <ul>
+              <li><a href="gallery.html">Audi Collection</a></li>
+              <li><a href="gallery.html">Mercedes AMG</a></li>
+              <li><a href="gallery.html">BMW Series</a></li>
+              <li><a href="gallery.html">Supercars & Exotic</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal & Safety</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Insurance Coverage</a></li>
+              <li><a href="#">Help & FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 GoCar Rental. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

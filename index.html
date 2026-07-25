@@ -2,131 +2,156 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GoCar</title>
-    <meta name="description" content="Rent cars online" />
-    <meta name="keywords" content="cars, rent, online" />
-    <meta name="author" content="Bilal El yazidi" />
+    <title>GoCar - Premium Luxury & Everyday Car Rental</title>
+    <meta name="description" content="Rent premium cars online with GoCar. Unbeatable prices, luxury fleet, 24/7 service, and effortless booking." />
+    <meta name="keywords" content="car rental, rent car online, luxury car rental, GoCar" />
+    <meta name="author" content="GoCar Team" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/navigatbar.css" />
-
   </head>
-  <body style="overflow-x: hidden">
-
+  <body>
+    <!-- Header Navbar -->
     <header class="header">
-      <nav class="navbar container">
-        <img src="images/logo.svg" alt="gocar logo" />
-        <ul>
-          <li><a href="hero.html">Hero Page</a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Gallery</a></li>
-          <li><a href="Avantages.html">Advantages</a></li>
-          <li><a href="Carte.html">Find Us</a></li>
-          <li><a href="contact.html">contact Us</a></li>
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="GoCar Rental Logo" />
+          </a>
+          
+          <button class="hamburger" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-        </ul>
-      </nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="gallery.html" class="nav-link">Car Fleet</a></li>
+            <li><a href="advantages.html" class="nav-link">Advantages</a></li>
+            <li><a href="find-us.html" class="nav-link">Find Us</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
+    <!-- Hero Section -->
     <section class="hero">
+      <video class="hero-video-bg" autoplay muted loop playsinline src="images/video.mp4" type="video/mp4"></video>
+      <div class="hero-overlay"></div>
       <div class="container">
-        <div>
-          <video
-            src="images/video.mp4"
-            type="video/mp4"
-            autoplay
-            muted
-            loop
-          ></video>
-        </div>
-        <div class="content">
-          <h1>The Things That Make Sense</h1>
+        <div class="hero-content">
+          <span class="hero-tag">Luxury & Everyday Mobility</span>
+          <h1>The Things That Make Ultimate Sense</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-            totam, dolorem delectus iusto voluptatibus autem asperiores ea eaque
-            praesentium qui maiores, tempora voluptas eum ab officia doloremque!
-            Incidunt, temporibus tenetur?
+            Experience unparalleled freedom with GoCar. From sleek sports cars to spacious SUVs, reserve your perfect ride in minutes with transparent pricing and zero hidden fees.
           </p>
-          <hr />
+          <div class="hero-actions">
+            <a href="gallery.html" class="btn btn-accent">Explore Our Fleet</a>
+            <a href="advantages.html" class="btn btn-secondary">Why Choose Us</a>
+          </div>
         </div>
       </div>
     </section>
-    <section class="about">
-      <div>
-        <img src="images/car1.jpg" alt="" />
-      </div>
+
+    <!-- About Section 1 -->
+    <section class="section-padding">
       <div class="container">
-        <h2>Why Gocar <span>?</span></h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo deserunt
-          fugiat corporis velit harum vel error animi quam necessitatibus
-          voluptatibus veritatis provident ut, esse labore dolor adipisci
-          debitis et consequuntur! Quidem nostrum saepe explicabo natus facilis
-          rerum eligendi ullam magni praesentium ab tempore voluptate sint,
-          veritatis laudantium repellat quam labore perspiciatis odio et,
-          deleniti porro! Magni explicabo quidem quia iure!
-        </p>
-        <a href="#" class="btn">read more</a>
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="images/car1.jpg" alt="Luxury Car Rental GoCar" />
+          </div>
+          <div class="about-content">
+            <h2>Why GoCar <span>?</span></h2>
+            <p>
+              We believe renting a vehicle should be as thrilling as driving one. Our curated fleet undergoes rigorous maintenance and multi-point inspections to ensure supreme safety and comfort.
+            </p>
+            <p>
+              Whether you need an executive sedan for business or an exotic supercar for a weekend getaway, GoCar provides instant digital bookings, doorstep delivery, and round-the-clock roadside assistance.
+            </p>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <h3>500+</h3>
+                <p>Vehicles</p>
+              </div>
+              <div class="stat-item">
+                <h3>99%</h3>
+                <p>Happy Clients</p>
+              </div>
+              <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Live Support</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    
-    <section class="about2">
-      <div>
-        <img src="images/car2.jpg" alt="" />
-      </div>
+
+    <!-- About Section 2 -->
+    <section class="section-padding bg-secondary">
       <div class="container">
-        <h2>Because You Deserve <span>It</span></h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magnam
-          perferendis aperiam, quis autem obcaecati sit quasi vitae at commodi
-          sed ducimus nobis laborum labore accusamus optio architecto voluptates
-          incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Quo deserunt fugiat corporis velit harum vel error animi quam
-          necessitatibus voluptatibus veritatis provident ut, esse labore dolor
-          adipisci debitis et consequuntur! Quidem nostrum saepe explicabo natus
-          facilis rerum eligendi ullam magni praesentium ab tempore voluptate
-          sint, veritatis laudantium repellat quam labore perspiciatis odio et,
-          deleniti porro! Magni explicabo quidem quia iure!
-        </p>
-        <a href="#" class="btn">read more</a>
+        <div class="about-grid">
+          <div class="about-content">
+            <h2>Because You Deserve <span>It</span></h2>
+            <p>
+              Step into luxury with our exclusive premium series. Indulge in state-of-the-art acoustics, ergonomic leather interiors, and modern high-performance engines engineered for pure driving satisfaction.
+            </p>
+            <p>
+              No long queues, no tedious paperwork. Manage your bookings effortlessly from any device and hit the open road with total peace of mind.
+            </p>
+            <a href="gallery.html" class="btn">Reserve Your Ride</a>
+          </div>
+          <div class="about-image">
+            <img src="images/car2.jpg" alt="GoCar Premium Fleet" />
+          </div>
+        </div>
       </div>
     </section>
-    
-    
-    <footer class="container">
-      <div class="footer-inner">
-        <div>
-          <h4>About Us</h4>
-          <hr />
-          <ul class="footer-menu">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Questions</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="images/logo.svg" alt="GoCar Logo" style="height: 36px;" />
+            <p>Your premier destination for hassle-free, luxury, and everyday car rentals across the region.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Car Fleet</a></li>
+              <li><a href="advantages.html">Advantages</a></li>
+              <li><a href="find-us.html">Find Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Our Fleet</h4>
+            <ul>
+              <li><a href="gallery.html">Audi Collection</a></li>
+              <li><a href="gallery.html">Mercedes AMG</a></li>
+              <li><a href="gallery.html">BMW Series</a></li>
+              <li><a href="gallery.html">Supercars & Exotic</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal & Safety</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Insurance Coverage</a></li>
+              <li><a href="#">Help & FAQs</a></li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h4>Company</h4>
-          <hr />
-          <ul class="footer-menu">
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Cars</a></li>
-            <li><a href="#">Advertising</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Legal Notice</h4>
-          <hr />
-          <ul class="footer-menu">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms Of Use</a></li>
-            <li><a href="#">Legal</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
+        <div class="footer-bottom">
+          <p>&copy; 2026 GoCar Rental. All Rights Reserved.</p>
         </div>
       </div>
-      <p>All Rights Reserveed - GoCar 2020</p>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
